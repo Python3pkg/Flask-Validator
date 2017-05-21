@@ -18,7 +18,7 @@ class ValidateInteger(Validator):
         if sys.version_info >= (3, 0):
             return isinstance(value, int)
         else:
-            return isinstance(value, (int, long))
+            return isinstance(value, int)
 
 
 class ValidateNumeric(Validator):
@@ -37,7 +37,7 @@ class ValidateNumeric(Validator):
         if sys.version_info >= (3, 0):
             return isinstance(value, (int, float, complex))
         else:
-            return isinstance(value, (int, long, float, complex))
+            return isinstance(value, (int, float, complex))
 
 
 class ValidateString(Validator):
